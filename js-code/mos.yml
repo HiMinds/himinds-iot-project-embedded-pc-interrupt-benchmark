@@ -20,7 +20,10 @@ sources:
 # List of dirs. Files from these dirs will be copied to the device filesystem
 filesystem:
   - fs
-  
+
+build_vars:
+ ESP_IDF_SDKCONFIG_OPTS: "${build_vars.ESP_IDF_SDKCONFIG_OPTS} CONFIG_TASK_WDT_CHECK_IDLE_TASK_CPU0="
+
 libs:
   - origin: https://github.com/mongoose-os-libs/core
   - origin: https://github.com/mongoose-os-libs/rpc-service-config
