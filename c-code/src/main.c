@@ -52,6 +52,5 @@ enum mgos_app_init_result mgos_app_init(void)
   else
     LOG(LL_ERROR, ("failed to attach interrupt"));
 
-
   return MGOS_APP_INIT_SUCCESS;
 }
